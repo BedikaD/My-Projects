@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document js</title>
+</head>
+<body>
+    <button>Roll No: 1 Bedika Dubey</button>
+    <h1> Namaste World </h1>
+    <script>
+        let namasteBtn = document.querySelector('button');
+        namasteBtn.addEventListener('click',inputMsg);
+
+        function inputMsg(){
+            let name = prompt('Enter the name of the student');
+            namasteBtn.textContent = 'Roll No: 1' + name;
+        }
+    </script>
+</body>
+</html>
